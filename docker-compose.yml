@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  xampp:
+    build: .
+    image: nyghtfallsharp/xampp:8
+    ports:
+      - "41061:22"
+      - "41062:80"
+    volumes:
+      - "${LOC}:/www"
